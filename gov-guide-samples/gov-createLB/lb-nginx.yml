@@ -24,6 +24,7 @@ metadata:
   name: default-http-nginx-service
   annotations:
     service.beta.kubernetes.io/openstack-internal-load-balancer: "true"
+    loadbalancer.ike.kakaoicloud.com/load-balancer-type: "NLB"
 spec:
   selector:
     app: nginx
